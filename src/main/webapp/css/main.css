@@ -1,0 +1,24 @@
+.jobicon-16x16 {
+    height:16px;
+    width:16px;
+}
+.jobicon-32x32 {
+    height:32px;
+    width:32px;
+}
+.jobicon-64x64 {
+    height:64px;
+    width:64px;
+}
+.jobicon-invert{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+.jobicon-grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.jobicon-hue {
+    -webkit-filter: hue-rotate(185deg);
+    filter: hue-rotate(185deg);
+}

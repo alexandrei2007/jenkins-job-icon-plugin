@@ -1,0 +1,12 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <j:set var="useIcon" value="${instance.useIcon}" />
+    <f:optionalBlock name="useIcon" title="${%optionalBlockTitle}" checked="${useIcon}">
+        <f:entry title="${%iconUrlTitle}" field="iconUrl">
+            <f:textbox />
+        </f:entry>
+        <f:entry title="${%cssClassNameTitle}" field="cssClassName">
+            <f:select/>
+        </f:entry>
+    </f:optionalBlock>
+</j:jelly>
