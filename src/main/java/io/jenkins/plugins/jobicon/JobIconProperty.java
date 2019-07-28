@@ -51,6 +51,11 @@ public class JobIconProperty extends JobProperty<Job<?, ?>>
 	@Extension
 	public static final class DescriptorImpl extends JobPropertyDescriptor
 	{
+        public String getDisplayName() 
+        { 
+            return ""; 
+        }
+
 		@Override
 		public boolean isApplicable(Class<? extends Job> jobType)
 		{
@@ -89,7 +94,7 @@ public class JobIconProperty extends JobProperty<Job<?, ?>>
        private Boolean validateUrl(String url) 
        {
             if (url != null && url.length() > 0) { 
-                if (!url.matches("(http(s?):)([/|.|\\w|\\s|-])*\\.(?:jpg|png|svg)")){
+                if (!url.matches("(http(s?):)(.*)\\.(?:jpg|png|svg)")){
                     return false;
                 }
             }

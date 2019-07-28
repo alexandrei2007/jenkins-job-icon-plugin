@@ -1,7 +1,6 @@
 package io.jenkins.plugins.jobicon;
 
 import hudson.Extension;
-import hudson.model.Descriptor;
 import hudson.views.ListViewColumn;
 import hudson.views.ListViewColumnDescriptor;
 import net.sf.json.JSONObject;

@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  jenkins:
+    image: jenkins-build
+    tty: true
+    stdin_open: true
+    entrypoint:
+    - bash
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/app
